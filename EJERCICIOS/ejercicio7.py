@@ -6,3 +6,5 @@ def agregar_una_vez(lista, elemento):
         raise ValueError("Error: Imposible añnadir elementos duplicados=>{}".format(elemento))
     return lista
 
+if __name__ == '__main__':
+    print(agregar_una_vez([1, "Hola", 4, "Adiós"], 6))
