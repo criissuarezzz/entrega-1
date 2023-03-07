@@ -10,7 +10,7 @@ from EJERCICIOS import ejercicio7
 
 
 
-def menu():
+def iniciar():
     helpers.limpiar_pantalla()
     print("BIENVENIDO AL MENÚ DE EJERCICIOS DEL PARCIAL")
     print("============================================")
@@ -27,13 +27,15 @@ def menu():
     print("============================================")
     opcion = input("Ingrese la opción que desea: ")
     helpers.limpiar_pantalla()
-    
+
     if opcion == "1":
-        ejercicio1.ejercicio1()
+        print("EJERCICIO 1")
+        ejercicio1.Alumno()
     elif opcion == "2":
-        ejercicio2.ejercicio2()
+        print("EJERCICIO 2")
+        ejercicio2.numero()
     elif opcion == "3":
-        ejercicio3.ejercicio3()
+        ejercicio3.Ejercicio3()
     elif opcion == "4":
         ejercicio4.ejercicio4()
     elif opcion == "5":

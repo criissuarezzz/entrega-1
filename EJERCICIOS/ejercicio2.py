@@ -2,26 +2,26 @@ from ast import main
 import sys
 
 numero_magico=12345679
-
-def excepcion():
-    while True:
-        numero=(input("Nº entre 1 y 9: "))
+class numero:
+    def numeromagico():
+        numeroint=input("Introduzca un numero del 0 al 9: ")
         try:
-            numero=int(numero)
-            if 1<=int(numero)<=9:
-                return numero
-                break
-                sys.exit()
-            else:
-                pass
+            numeroint=int(numeroint)
         except:
-            raise ValueError("El caracter ni válido", file=sys.stderr)
+            print("valor no aceptado", file=sys.stderr)
+        if 0<=numeroint<=9:
+            return numeroint
+        else:
+            print("valor no aceptado", file=sys.stderr)
+            numero.numeromagico()
+        print("Has introducido el numero: ", numeroint)
+        print("El numero magico es: ", numero_magico)
+        print("Al multiplicar el numero introducido por 9, el resultado es: ", numeroint*9)
+        print("Al multiplicar el numero magico por el resultado anterior, el resultado es: ", numero_magico*(numeroint*9))
 
-def num():
-    numero=excepcion()
-    n1=numero*9
-    print("{} multiplicado por 9 es {}".format(numero, n1))
-    valor_magico=numero_magico*n1
-    return "{} multiplicado por {} es {}".format(n1, numero_magico, valor_magico)
+        
 
-print(num())
+
+
+if __name__=="__main__":
+    main()
