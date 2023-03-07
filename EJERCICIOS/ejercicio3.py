@@ -9,5 +9,5 @@ def lista(lista_1, lista_2):
             lista_3.append(item)
     return lista_3
 
-# print(lista())
+print(lista())
             
