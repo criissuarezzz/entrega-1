@@ -37,7 +37,11 @@ class Alumno:
                 return cadena
 
 # Experimentacion
-nombre1=Alumno("zeréP nauJ,01")
-print(Alumno.transformar_cadena(nombre1.cadena))
+
+if __name__ == '__main__':
+    nombre1=Alumno("zeréP nauJ,01")
+    print("La cadena a descomponer es:", nombre1.cadena)
+    print(Alumno.transformar_cadena(nombre1.cadena))
+
 
 

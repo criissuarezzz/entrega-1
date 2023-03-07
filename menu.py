@@ -30,12 +30,18 @@ def iniciar():
 
     if opcion == "1":
         print("EJERCICIO 1")
-        ejercicio1.Alumno()
+        nombre1=ejercicio1.Alumno("zeréP nauJ,01")
+        print("La cadena a descomponer es:", nombre1.cadena)
+        print(ejercicio1.Alumno.transformar_cadena(nombre1.cadena))
+        
     elif opcion == "2":
         print("EJERCICIO 2")
-        ejercicio2.numero()
+        ejercicio2.numeromagico()
     elif opcion == "3":
-        ejercicio3.Ejercicio3()
+        print("EJERCICIO 3")
+        print("La lista 1 es:", Ejercicio3.lista_1)
+        print("La lista 2 es:", Ejercicio3.lista_2)
+        print(Ejercicio3.lista(Ejercicio3.lista_1, Ejercicio3.lista_2))
     elif opcion == "4":
         ejercicio4.ejercicio4()
     elif opcion == "5":
@@ -48,3 +54,6 @@ def iniciar():
         helpers.limpiar_pantalla()
         print("Gracias por utilizar el programa")
         os._exit(0)
+
+    input(">>> Presiona ENTER para continuar <<<")
+    iniciar()

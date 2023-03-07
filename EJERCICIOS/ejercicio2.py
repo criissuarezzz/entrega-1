@@ -17,11 +17,10 @@ def numeromagico():
     print("Al multiplicar el numero introducido por 9, el resultado es: ", numeroint*9)
     print("Al multiplicar el numero magico por el resultado anterior, el resultado es: ", numero_magico*(numeroint*9))
 
-print(numeromagico())
 
         
 
 
 
 if __name__=="__main__":
-    main()
+    print(numeromagico())

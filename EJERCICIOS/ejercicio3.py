@@ -12,5 +12,8 @@ class Ejercicio3:
                 lista_3.append(item)
         return lista_3
 
-    print(lista())
+if __name__=='__main__':
+    print("La lista 1 es:", Ejercicio3.lista_1)
+    print("La lista 2 es:", Ejercicio3.lista_2)
+    print(Ejercicio3.lista(Ejercicio3.lista_1, Ejercicio3.lista_2))
             
