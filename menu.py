@@ -37,13 +37,16 @@ def iniciar():
     elif opcion == "2":
         print("EJERCICIO 2")
         ejercicio2.numeromagico()
+
     elif opcion == "3":
         print("EJERCICIO 3")
-        print("La lista 1 es:", Ejercicio3.lista_1)
-        print("La lista 2 es:", Ejercicio3.lista_2)
-        print(Ejercicio3.lista(Ejercicio3.lista_1, Ejercicio3.lista_2))
+        print("La lista 1 es:", ejercicio3.Ejercicio3.lista_1)
+        print("La lista 2 es:", ejercicio3.Ejercicio3.lista_2)
+        print(ejercicio3.Ejercicio3.lista(ejercicio3.Ejercicio3.lista_1, ejercicio3.Ejercicio3.lista_2))
+
     elif opcion == "4":
-        ejercicio4.ejercicio4()
+        ejercicio4.Ej4()
+        
     elif opcion == "5":
         ejercicio5.ejercicio5()
     elif opcion == "6":

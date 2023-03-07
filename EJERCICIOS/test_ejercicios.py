@@ -14,6 +14,9 @@ class TestEjercicios(unittest.TestCase):
         nombre=ejercicio1.Alumno("zeréP nauJ,01")
         self.assertEqual(ejercicio1.Alumno.transformar_cadena(nombre.cadena), "Juan Pérez ha sacado un 10")
     
+    def test_cadena(self):
+        self.assertEqual(ejercicio2.numeromagico(), 123456790)
+        
     def test_listas(self):
         lista_1 = ["h",'o','l','a',' ', 'm','u','n','d','o']
         lista_2 = ["h",'o','l','a',' ', 'l','u','n','a']
