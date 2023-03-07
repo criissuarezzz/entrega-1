@@ -8,6 +8,8 @@ from EJERCICIOS import ejercicio5
 from EJERCICIOS import ejercicio6
 from EJERCICIOS import ejercicio7
 
+
+
 def menu():
     helpers.limpiar_pantalla()
     print("BIENVENIDO AL MENÚ DE EJERCICIOS DEL PARCIAL")
@@ -24,6 +26,8 @@ def menu():
     print("             8. SALIR                       ")
     print("============================================")
     opcion = input("Ingrese la opción que desea: ")
+    helpers.limpiar_pantalla()
+    
     if opcion == "1":
         ejercicio1.ejercicio1()
     elif opcion == "2":
